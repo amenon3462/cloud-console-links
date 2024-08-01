@@ -316,7 +316,8 @@ def get_links() -> Dict:
             "local-gateway-route-table-vpc-association": None,
             "local-gateway-virtual-interface": None,
             "local-gateway-virtual-interface-group": None,
-            "network-acl": None,
+            "network-acl": 'https://{data.get("region", "")}.{data.get("console", "")}/ec2/'
+    'home?region={data.get("region", "")}#NetworkAcl:networkAclId={data.get("resource", "")}',
             "network-interface": 'https://{data.get("region", "")}.{data.get("console", "")}/ec2/\
                     home?region={data.get("region", "")}#NetworkInterface:networkInterfaceId={data.get("resource", "")}',
             "placement-group": None,
@@ -334,7 +335,8 @@ def get_links() -> Dict:
             "traffic-mirror-filter-rule": None,
             "traffic-mirror-session": None,
             "traffic-mirror-target": None,
-            "transit-gateway": None,
+            "transit-gateway": 'https://{data.get("region", "")}.{data.get("console", "")}/ec2/'
+    'home?region={data.get("region", "")}#TransitGateway:transitGatewayId={data.get("resource", "")}',
             "transit-gateway-attachment": None,
             "transit-gateway-multicast-domain": None,
             "transit-gateway-route-table": None,
